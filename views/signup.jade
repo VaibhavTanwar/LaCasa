@@ -1,0 +1,28 @@
+extends layout
+block content
+  section.banner.cf
+    .wrapper
+      h1
+        | Register 
+        br
+        | Here.
+  section.workreg
+    .wrapper
+      .row
+        .card.card_full.card_1
+          .card_inner.purple
+            form(action='sucess.html')
+              p Username
+              input(type='text', name='', placeholder='Your username')
+              p Address
+              input(type='text', name='', placeholder='Enter address')
+              p Phone Number
+              input(type='text', name='', placeholder='Enter contact')
+              p Email
+              input(type='text', name='', placeholder='Enter email-id' required="")
+              p Password
+              input(type='password', name='', placeholder='Enter password')
+              p Confirm Password
+              input(type='password', name='', placeholder='Re-Enter password')
+            button(onclick = 'foo()' ).regbtn SIGN UP
+            a(href='/loginform.html') Log In?

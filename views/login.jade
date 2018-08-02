@@ -1,0 +1,16 @@
+
+extends layout
+block content
+    .lg
+      .loginbox
+        img.avatar(src='images/userimage.png', alt='avatar')
+        h1 Login Box
+        form(action='')
+          p Username
+          input(type='text', name='', placeholder='Enter username')
+          p Password
+          input(type='password', name='', placeholder='Enter password')
+          //- input.submission(type='submit', name='', value='Login')
+        button(onclick = 'login_user()').logbtn Login
+        a(href='/signup') New User?
+      .spacelog

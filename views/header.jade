@@ -1,0 +1,24 @@
+extends layout
+
+block _header
+    header
+      nav.main_nav
+        .container
+          .row
+            .col.main_nav_col.d-flex.flex-row.align-items-center.justify-content-start
+              .logo_container
+                .logo
+                  a(href='indexbanner.html')
+                    img(src='images/clogo.png', alt='', style='width: 46px')
+                    | 
+              .main_nav_container.ml-auto
+                ul.main_nav_list
+                  li.main_nav_item
+                    a(href='indexbanner.html') home
+                  li.main_nav_item
+                    a(href='about1.html') about us
+                  li.main_nav_item
+                    a(href='portfolio1.html') portfolio
+                  // <li class="main_nav_item"><a href="blog.html">news</a></li>
+                  li.main_nav_item
+                    a(href='loginform.html') contact
